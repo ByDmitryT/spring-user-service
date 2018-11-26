@@ -19,14 +19,14 @@ REST Сервис по хранению и управлению учетными
 
 1. Добавление пользователя:
 
-curl --header "Content-Type: application/json" \\
- --request POST \\
- --data '{"lastName":"pupkin", "firstName":"bob", "birthday": "1990-10-18", "email": "bob@yandex.ru", "password":"12345"}' \\
+curl --header "Content-Type: application/json" \\\
+ --request POST \\\
+ --data '{"lastName":"pupkin", "firstName":"bob", "birthday": "1990-10-18", "email": "bob@yandex.ru", "password":"12345"}' \\\
  http://localhost:8080/user
  
 2. Удаление пользователя:
 
-curl --request DELETE \\
+curl --request DELETE \\\
  http://localhost:8080/user/1
  
 3. Поиск пользователя по email:
